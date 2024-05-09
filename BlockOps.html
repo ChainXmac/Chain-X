@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChainX - Blockchain Operations Management System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333333;
+        text-align: center;
+    }
+    .benefit-button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .benefit-button:hover {
+        background-color: #ffcc00;
+        color: #333333;
+    }
+    .blue-button {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+    .yellow-button {
+        background-color: #ffc107;
+        color: #333333;
+    }
+    .benefit-details {
+        display: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ChainX - Blockchain Operations Management System</h1>
+    <button class="benefit-button blue-button" onclick="toggleDetails('transparency')">Enhanced Supply Chain Transparency</button>
+    <div id="transparency-details" class="benefit-details">
+        Blockchain technology provides a transparent and immutable ledger for tracking the movement of goods across the supply chain. This ensures accountability, reduces fraud, and enhances trust among stakeholders.
+    </div>
+
+    <button class="benefit-button yellow-button" onclick="toggleDetails('automation')">Efficient Smart Contract Automation</button>
+    <div id="automation-details" class="benefit-details">
+        Smart contracts, powered by blockchain technology, automate and enforce the execution of agreements such as procurement contracts, payment terms, and service level agreements. This streamlines operations and reduces reliance on intermediaries.
+    </div>
+
+    <button class="benefit-button blue-button" onclick="toggleDetails('tracking')">Real-Time Inventory Tracking</button>
+    <div id="tracking-details" class="benefit-details">
+        Blockchain enables real-time tracking of inventory across multiple locations, ensuring accurate and up-to-date inventory information. This minimizes stockouts, overstocking, and discrepancies in inventory records.
+    </div>
+
+    <button class="benefit-button yellow-button" onclick="toggleDetails('quality')">Quality Assurance & Compliance</button>
+    <div id="quality-details" class="benefit-details">
+        Blockchain technology ensures the authenticity and quality of products throughout the manufacturing process. Immutable records on the blockchain verify compliance with regulatory standards, facilitate recalls, and enhance product traceability.
+    </div>
+
+    <button class="benefit-button blue-button" onclick="toggleDetails('asset')">Optimized Asset Management</button>
+    <div id="asset-details" class="benefit-details">
+        Blockchain-based asset management tracks the lifecycle of equipment, machinery, and vehicles, optimizing asset utilization and scheduling preventive maintenance. This reduces downtime and improves operational efficiency.
+    </div>
+
+    <button class="benefit-button yellow-button" onclick="toggleDetails('settlement')">Secure Payment & Settlement</button>
+    <div id="settlement-details" class="benefit-details">
+        Blockchain technology facilitates secure and efficient payment and settlement processes using cryptocurrencies or stablecoins. This enables instant, low-cost transactions, bypassing traditional financial intermediaries.
+    </div>
+</div>
+
+<script>
+    function toggleDetails(benefit) {
+        var detailsElement = document.getElementById(benefit + '-details');
+        if (detailsElement.style.display === 'none') {
+            detailsElement.style.display = 'block';
+        } else {
+            detailsElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
